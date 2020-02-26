@@ -14585,6 +14585,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var modals = function modals() {
+  /* -------------------- displaying a modal functionality -------------------- */
   function bindModal(triggerSelector, modalSelector, closeSelector) {
     var trigger = document.querySelectorAll(triggerSelector),
         modal = document.querySelector(modalSelector),
@@ -14613,9 +14614,22 @@ var modals = function modals() {
       }
     });
   }
+  /* ----------- displaying the modal after some time on the website ---------- */
+
+
+  function showModalByTime(selector, time) {
+    setTimeout(function () {
+      document.querySelector(selector).style.display = 'block'; // document.body.style.overflow = "hidden";
+
+      document.body.classList.add('modal-open');
+    }, time);
+  }
+  /* ---------------------------- calling functions --------------------------- */
+
 
   bindModal('.popup_engineer_btn', '.popup_engineer', '.popup_engineer .popup_close');
   bindModal('.phone_link', '.popup', '.popup .popup_close');
+  showModalByTime('.popup', 60000);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (modals);
