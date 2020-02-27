@@ -1,3 +1,5 @@
+import checkNumInputs from './checkNumInputs';
+
 const forms = () => {
   const form = document.querySelectorAll('form'),
     inputs = document.querySelectorAll('input'),
@@ -5,11 +7,7 @@ const forms = () => {
 
   //allowing only numbers for the phone number inputs using regex
 
-  phoneInputs.forEach(item => {
-    item.addEventListener('input', () => {
-      item.value = item.value.replace(/\D/, '');
-    });
-  });
+  checkNumInputs('input[name="user_phone"]');
 
   //object of messages to display while the POST request is happening
 
