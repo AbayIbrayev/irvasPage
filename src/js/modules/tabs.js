@@ -2,7 +2,6 @@ const tabs = (headerSelector, tabSelector, contentSelector, activeClass, display
   const header = document.querySelector(headerSelector),
     tab = document.querySelectorAll(tabSelector),
     content = document.querySelectorAll(contentSelector);
-  // active = document.querySelector(activeClass);
 
   /* --------------------- hiding the content of all tabs --------------------- */
 
