@@ -1,9 +1,10 @@
 import checkNumInputs from './checkNumInputs';
 
-const forms = () => {
+const forms = (state) => {
+
   const form = document.querySelectorAll('form'),
     inputs = document.querySelectorAll('input'),
-    phoneInputs = document.querySelectorAll('input[name="user_phone"]');
+    modal = document.querySelectorAll('[data-modal]');
 
   //allowing only numbers for the phone number inputs using regex
 
@@ -47,6 +48,11 @@ const forms = () => {
       item.appendChild(statusMessage);
 
       const formData = new FormData(item);
+      if (item.getAttribute('data-calc') === 'end') {
+        for (let key in state) {
+          formData.append(key, state[key]);
+        }
+      }
 
       postData('assets/server.php', formData)
         .then(res => {
@@ -58,7 +64,11 @@ const forms = () => {
           clearInputs();
           setTimeout(() => {
             statusMessage.remove();
-          }, 5000);
+            modal.forEach(item => {
+              item.style.display = "none";
+              document.body.classList.remove('modal-open');
+            });
+          }, 4000);
         });
     });
   });
