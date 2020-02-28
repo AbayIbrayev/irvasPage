@@ -17953,6 +17953,7 @@ var timer = function timer(id, deadline) {
         minutes = document.querySelector('#minutes'),
         seconds = document.querySelector('#seconds'),
         timerInterval = setInterval(updateClock, 1000);
+    updateClock();
 
     function updateClock() {
       var t = getTimeRemaining(endtime);
