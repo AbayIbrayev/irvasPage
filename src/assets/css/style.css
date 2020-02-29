@@ -22,8 +22,8 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0}
 .form_input:focus:-moz-placeholder{color:transparent}
 .form_input:focus:-ms-input-placeholder{color:transparent}
 .form_notice{margin-top:1rem;margin-bottom:2rem;font-size:1.1rem;color:#666}
-.button{padding:2.5rem 0rem;font-size:1.7rem;font-family:'Open Sans',sans-serif;font-weight:700;font-style:normal;border:1px solid #ffc600;border-radius:1rem;background:-webkit-gradient(linear,left top,left bottom,from(#ffed26),to(#ffb400));background:linear-gradient(180deg,#ffed26 0,#ffb400 100%);-webkit-box-shadow:1px 2px 20px 0 rgba(255,153,0,.4);box-shadow:1px 2px 20px 0 rgba(255,153,0,.4)}
-.button:hover{cursor:pointer}
+.button{padding:2.5rem 0rem;font-size:1.7rem;font-family:'Open Sans',sans-serif;font-weight:700;font-style:normal;border:1px solid #ffc600;border-radius:1rem;background:-webkit-gradient(linear,left top,left bottom,from(#ffed26),to(#ffb400));background:linear-gradient(180deg,#ffed26 0,#ffb400 100%);-webkit-box-shadow:1px 2px 20px 0 rgba(255,153,0,.4);box-shadow:1px 2px 20px 0 rgba(255,153,0,.4);opacity:1;transition:opacity .4s}
+.button:hover{cursor:pointer;opacity:.7}
 .section_header{margin-bottom:8rem;text-align:center;text-transform:uppercase}
 .section_header h2{font-size:3rem;line-height:1.4;font-family:'Open Sans',sans-serif;font-weight:700;font-style:normal;color:#333}
 .section_header_sub{margin-top:2rem;margin-left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);width:17rem;height:.2rem;background:url(../img/glazing/line.png) 0 0 no-repeat}
@@ -35,11 +35,11 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0}
 .header .logo_img{display:table-cell;vertical-align:middle}
 .header .logo_img img{margin-right:2rem}
 .header .logo p{display:table-cell;vertical-align:middle;line-height:1.2;font-size:1.4rem;color:#0089cd}
-.header_btn{background:#fff url(../img/header/edit.png) 1rem center no-repeat;padding:1rem 1rem 1rem 5rem;border:2px solid #55a831;border-radius:1rem;background-color:#fff;font-size:1.4rem;line-height:1.2;font-family:'Open Sans',sans-serif;font-weight:700;font-style:normal;color:#55a831}
+.header_btn{background:#fff url(../img/header/edit.png) 1rem center no-repeat;padding:1rem 1rem 1rem 5rem;border:2px solid #55a831;border-radius:1rem;background-color:#fff;font-size:1.4rem;line-height:1.2;font-family:'Open Sans',sans-serif;font-weight:700;font-style:normal;color:#55a831;opacity:1;transition:opacity .4s}
 .header_btn_wrap{display:table;width:100%;height:10rem}
 .header_btn_wrap_block{display:table-cell;vertical-align:middle}
 .header_btn_wrap_block img{margin-right:.7rem}
-.header_btn:hover{cursor:pointer}
+.header_btn:hover{cursor:pointer;opacity:.75}
 .header .working_hours{height:10rem;display:table}
 .header .working_hours_img{display:table-cell;vertical-align:middle}
 .header .working_hours_img img{margin-right:2rem}
@@ -50,6 +50,8 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0}
 .header .contact_us_wrap a{display:block;font-size:2.3rem;font-family:'Open Sans',sans-serif;font-weight:700;font-style:normal;color:#333}
 .header .contact_us_wrap a img{margin-right:1rem}
 .header .contact_us_wrap .phone_link{font-size:1.5rem;font-family:'Open Sans',sans-serif;font-weight:400;font-style:normal;color:#0089cd;text-decoration:underline}
+.phone_link{opacity:1;transition:opacity .4s}
+.phone_link:hover{opacity:.7}
 .main{padding:10rem 0;background:#fff url(../img/main/bg.png) 0 0 no-repeat;background-size:cover}
 .main h1{margin:0;font-size:5.5rem;line-height:1.5;font-family:'Open Sans',sans-serif;font-weight:700;font-style:normal;color:#333}
 .main h1 span{font-size:2.6rem}
@@ -59,10 +61,10 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0}
 .main_features_block p{margin-top:-6rem;font-size:1.3rem;line-height:1.3;font-family:'Open Sans',sans-serif;font-weight:700;font-style:normal;text-transform:uppercase;color:#fff}
 .main_form{margin-top:2rem}
 .glazing{padding:8rem 0}
-.glazing_block{display:inline-block}
+.glazing_block{display:inline-block;opacity:1;cursor:pointer;transition:opacity .4s}
+.glazing_block:hover{opacity:.75}
 .glazing_block img{display:block;margin:0 auto;margin-bottom:2rem}
 .glazing_block a{font-size:1.8rem;font-weight:600;text-decoration:underline}
-.glazing_block a:hover{cursor:pointer}
 .glazing_cold{margin-top:4rem;padding:2.5rem 0;text-align:center;border-bottom-left-radius:5px;border-top-left-radius:5px;border-top:.5rem solid #0089cd;background:-webkit-gradient(linear,left top,left bottom,from(#c7dce9),color-stop(0,#c7dce9),to(rgba(255,255,255,0)));background:linear-gradient(180deg,#c7dce9 0,#c7dce9 0,rgba(255,255,255,0) 100%)}
 .glazing_cold h3{margin-bottom:2.5rem;font-size:2rem;font-family:'Open Sans',sans-serif;font-weight:700;font-style:normal;text-transform:uppercase;color:#0089cd}
 .glazing_warm{margin-top:4rem;padding:2.5rem 0;text-align:center;border-bottom-right-radius:5px;border-top-right-radius:5px;border-top:.5rem solid #ffb903;background:-webkit-gradient(linear,left top,left bottom,from(#f7eac9),color-stop(0,#f7eac9),to(rgba(255,255,255,0)));background:linear-gradient(180deg,#f7eac9 0,#f7eac9 0,rgba(255,255,255,0) 100%)}
@@ -89,7 +91,8 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0}
 .decoration_content_material p span{display:block;font-size:1.2rem;font-family:'Open Sans',sans-serif;font-weight:400;font-style:normal;color:#000}
 .decoration .external,.decoration .rising,.decoration .roof{display:none}
 .works{padding:5rem 0}
-.works img{margin-bottom:3rem}
+.works img{opacity:1;transition:opacity .4s;margin-bottom:3rem}
+.works img:hover{opacity:.8}
 .works a[data-fancybox=gallery] .lupa{top:0;left:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);top:40%;opacity:0;-webkit-transition:ease .2s;transition:ease .2s}
 .works a[data-fancybox=gallery]:hover .lupa{opacity:1}
 .guarantees{padding:6rem 0 1rem;background-color:#0089cd}
@@ -97,7 +100,6 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0}
 .guarantees_header_sub{background:url(../img/guarantees/header_sub.png) 0 0 no-repeat}
 .guarantees h3{margin-top:3rem;margin-bottom:8rem;font-size:1.8rem;font-weight:600;line-height:1.4;color:#fff}
 .guarantees img{min-height:7rem}
-.guarantees_block:hover{-webkit-box-shadow:0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);box-shadow:0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22)}
 .payment{padding:6rem 0}
 .payment_header{text-transform:none}
 .payment_item h3{display:inline-block;font-size:2rem}
@@ -115,6 +117,7 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0}
 .contacts_info{margin-top:-3rem}
 .contacts_info h3{margin-bottom:1.8rem;font-size:1.5rem;font-weight:600;color:#0089cd}
 .contacts_info p{margin-bottom:3rem;font-size:1.8rem;font-weight:600}
+.contacts_info p a{display:inline-block;margin-bottom:0}
 .contacts_info p span{font-family:'Open Sans',sans-serif;font-weight:400;font-style:normal}
 .contacts_info a{display:block;margin-bottom:3rem;font-size:1.8rem;font-weight:600;color:#000;text-decoration:underline}
 .contacts .map{width:100%}
@@ -212,6 +215,7 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0}
 .sale_subtitle{margin-bottom:3rem;text-align:center}
 .contacts_info{margin-top:3rem}
 .feedback_block h3{display:block;margin-right:0;margin-bottom:2rem}
+.timer1{margin:auto}
 }
 @media (max-width:767px){
 .section_header h2{font-size:2.5rem}
